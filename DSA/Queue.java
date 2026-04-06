@@ -5,10 +5,10 @@ class Queue {
     Queue(int x) {
         front = rear = 0;
         capacity = x;
-        queue = new int[x];
+        queue = new int[x];   // space complexity is O(n)
     }
 
-    public void enqueue(int item) {
+    public void enqueue(int item) {  // O(1)
         if (rear == capacity) {
             System.out.println("Queue is full");
             return;
@@ -17,7 +17,7 @@ class Queue {
         rear++;
     }
 
-    public int dequeue() {
+    public int dequeue() {   // O(n)
         if (front == rear) {
             System.out.println("Queue is empty");
             return -1;
@@ -34,7 +34,7 @@ class Queue {
         return item;
     }
 
-    public int front() {
+    public int front() {   // O(1)
         if (front == rear) {
             System.out.println("Queue is empty");
             return -1;
