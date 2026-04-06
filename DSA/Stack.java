@@ -38,7 +38,7 @@ class Stack {
     }
 }
 
-class Main {
+class StackMain {
     public static void main(String[] args) {
         Stack stack = new Stack(5);
 

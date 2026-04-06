@@ -50,7 +50,7 @@ class MyArray {
     }
 }
 
-class Main {
+class ArrayMain {
     public static void main(String[] args) {
 
         MyArray obj = new MyArray(5); 
