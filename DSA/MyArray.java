@@ -4,7 +4,7 @@ class MyArray {
 
 
     public MyArray(int capacity) {
-        arr = new int[capacity];
+        arr = new int[capacity];   // space complexity is O(n)
         size = 0;
     }
 
