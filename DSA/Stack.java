@@ -4,7 +4,7 @@ class Stack {
     int[] stack;
 
     Stack(int size) {
-        stack = new int[size];
+        stack = new int[size];   // space complexity is O(n)
         capacity = size;
         top = -1;
     }
