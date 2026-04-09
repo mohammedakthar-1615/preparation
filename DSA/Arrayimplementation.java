@@ -12,8 +12,14 @@ class Arrayimplementation {
 
     public void insert(int value) {   // O(1)
         if (size == arr.length) {
-            System.out.println("Array is full");
-            return;
+            int newcapacity = arr.length * 5;
+            int[] newArr = new int[newcapacity];
+            for(int i = 0 ; i < arr.length; i++){
+                newArr[i] = arr[i];
+            }
+
+            arr = newArr;
+        
         }
         arr[size] = value;
         size++;
@@ -62,10 +68,11 @@ class ArrayMain {
         obj.insert(30);
         obj.insert(40);
         obj.insert(50); 
+        obj.insert(60);
 
         obj.traverse();   
 
-        obj.delete(1);
+        obj.delete(2);
 
         obj.traverse();   
 
