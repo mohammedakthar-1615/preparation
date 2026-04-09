@@ -12,8 +12,11 @@ class Arrayimplementation {
 
     public void insert(int value) {   // O(1)
         if (size == arr.length) {
+
             int newcapacity = arr.length * 5;
             int[] newArr = new int[newcapacity];
+
+            
             for(int i = 0 ; i < arr.length; i++){
                 newArr[i] = arr[i];
             }
