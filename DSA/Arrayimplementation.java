@@ -4,13 +4,13 @@ class Arrayimplementation {
 
 
     public Arrayimplementation(int capacity) {
-        arr = new int[capacity];   // space complexity is O(n)
+        arr = new int[capacity];                             // space complexity is O(n)
         size = 0;
     }
    
 
 
-    public void insert(int value) {   // O(1)
+    public void insert(int value) {                         // O(1)
         if (size == arr.length) {
 
             int newcapacity = arr.length * 5;
@@ -29,7 +29,7 @@ class Arrayimplementation {
     }
 
 
-    public void delete(int index) {  // O(n)
+    public void delete(int index) {                        // O(n)
         if (index < 0 || index >= size) {
             System.out.println("Invalid index");
             return;
@@ -42,7 +42,7 @@ class Arrayimplementation {
     }
 
 
-    public int search(int key) {  // O(n)
+    public int search(int key) {                            // O(n)
         for (int i = 0; i < size; i++) {
             if (arr[i] == key) {
                 return i;
@@ -53,7 +53,7 @@ class Arrayimplementation {
 
 
 
-    public void traverse() {   // O(n)
+    public void traverse() {                                // O(n)
         for (int i = 0; i < size; i++) {
             System.out.print(arr[i] + " ");
         }
