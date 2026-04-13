@@ -41,6 +41,17 @@ class Stackimplementation {
         return stack[top];
     }
 
+    public void traverse() {
+        if (top == -1) {
+            System.out.println("Stack is empty");
+            return;
+        }
+
+        for (int i = top; i >= 0; i--) {
+            System.out.println(stack[i]);
+        }
+    }
+
     public boolean isEmpty() {                                   // O(1)
         return top == -1;
     }
@@ -56,7 +67,10 @@ class StackMain {
         stack.push(85); //3
         stack.push(95); //4
 
+
         System.out.println(stack.pop() + " popped from stack");
         System.out.println("Top element is: " + stack.peek());
+
+        stack.traverse();
     }
 }
