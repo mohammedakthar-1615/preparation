@@ -52,6 +52,17 @@ class Queueimplementation {
         }
         return queue[front];
     }
+
+    public void traverse(){
+        if(front == rear){
+            System.out.println("Queue is empty");
+        }
+
+        for(int i = front ; i < rear; i++){
+            System.out.println(queue[i]);
+        }
+    }
+
 }
 
 class QueueMain {
@@ -67,5 +78,7 @@ class QueueMain {
 
         System.out.println(q.dequeue());
         System.out.println("Front item is: " + q.front());
+
+        q.traverse();
     }
 }
