@@ -88,6 +88,22 @@ class Linkedlist{
         System.out.println(false);
     }
 
+    void reveser(){
+        Node prev = null;
+        Node current = head;
+        Node next = null;
+
+        while(current != null ){
+            next = current.next;
+            current.next = prev;                            // reverser the linkedlist
+            prev = current;
+            current = next;
+        }
+
+        head = prev;
+
+    }
+
     void traverse(){
         Node temp = head;
         while(temp != null){
@@ -112,6 +128,8 @@ class Linkedlist{
         list.deleteindex(2);
 
         list.search(20);
+
+        list.reveser();
         
         list.traverse();
     }
